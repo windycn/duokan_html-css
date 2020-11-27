@@ -1,0 +1,78 @@
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.u-sep {
+    padding: 0 10px;
+    color: #dbd4cd;
+    font-size: 11px!important;
+}
+footer > div:first-child {
+    width: 75%;
+}
+footer > div:last-child > div{
+    float: right;
+}
+footer > div:last-child > ul{
+    position: relative;
+    float: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+footer > div:last-child > ul > li{
+    padding: 5px;
+}
+footer > div:last-child > ul > li:last-child{
+    font-family: arial;
+    color: #555;
+    border-left: 1px solid #e1dcd7;
+    height: 35px;
+    width: 15px;
+    margin-left: 15px;
+}
+#email:hover {
+    color: #ee6e00;
+    cursor: pointer;
+}
+#goToTop{
+    position: fixed;
+    right: 111px;
+    bottom: 85px;
+    z-index: 600;
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 40px;
+    text-align: center;
+    background: #c9c8c6;
+    color: #f5f5f4;
+}
+#goToTop:hover {
+    cursor: pointer;
+    background: #868686;
+}
+.weixin_card {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #EEE;
+    box-shadow: 0 0 4px #cbcbcb;
+    color: #999;
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+    top: -158px;
+    right: 25px;
+}
+.weixin_card > img {
+    width: 100px;
+    margin-top: 10px;
+}
+.weixin:hover .weixin_card{
+    display: block;
+}

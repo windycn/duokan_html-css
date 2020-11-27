@@ -1,0 +1,499 @@
+/*start********************第一大栏目********************start*/
+#changxiao {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+/******************左边******************/
+#changxiao > div.left {
+  width: 201px;
+  margin-top: 2px;
+  padding: 4px 20px 15px;
+  background: #f4f2ef;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+#changxiao > div.left > div:first-child > ul {
+  display: flex;
+  border-bottom: 1px solid #dbd4cd;
+}
+.itm {
+  width: 50px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+}
+.itm:hover {
+  color: #ed6c00;
+}
+.hot:hover {
+  color: #333;
+}
+.sep {
+  margin: 0 10px;
+  color: #dbd4cd;
+  font-size: 11px;
+  line-height: 38px;
+}
+/* 箭头位置，需要不断移动 */
+#arrow {
+  position: absolute;
+  top: 33px;
+  left: 40px; /* 40 115 185*/
+}
+/* 箭头线 */
+.arrow0 {
+  border: 5px solid transparent;
+  border-bottom: 5px solid #dbd4cd;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+}
+/* 箭头底部 */
+.arrow1 {
+  border: 4px solid transparent;
+  border-bottom: 4px solid #f4f2ef;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: " ";
+  top: 2px;
+  left: 1px;
+}
+.u-txtlst {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(10, auto);
+  text-align: left;
+}
+.u-txtlst > li {
+  height: 45px;
+}
+.u-title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+}
+.u-title > em {
+  margin-right: 10px;
+  font-size: 14px;
+  font-style: normal;
+}
+.u-author {
+  padding-left: 25px;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #afa298;
+  font-size: 12px;
+  line-height: 18px;
+}
+.hot {
+  font-weight: 700;
+  font-style: normal;
+}
+.u-more {
+  color: #613f23;
+  font-size: 12px;
+  display: block;
+  padding: 10px 0 5px 26px;
+  text-align: left;
+}
+.arr {
+  margin-left: 2px;
+  font-family: simsun;
+}
+.u-title:hover {
+  cursor: pointer;
+  color: #ed6c00;
+}
+.u-more:hover {
+  cursor: pointer;
+  color: #ed6c00;
+}
+/******************右边******************/
+#changxiao > div.right {
+  width: 100%;
+  height: 300px;
+  margin-left: 10px;
+}
+#changxiao > div.right > div:first-child {
+  position: relative;
+  height: 38px;
+  margin-bottom: 28px;
+  padding: 4px 20px 0;
+  border-bottom: 1px solid #e0dad5;
+  overflow: hidden;
+  line-height: 38px;
+  overflow: hidden;
+}
+#changxiao > div.right > div:first-child > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+}
+#changxiao > div.right > div:first-child > span {
+  padding: 0;
+  float: right;
+}
+#changxiao > div.right > div:last-child > ul {
+  display: grid;
+  grid-template-columns: repeat(7, 135px);
+  grid-template-rows: repeat(2, 260px);
+}
+#changxiao > div.right > div:last-child > ul > li {
+  padding: 10px 10px;
+}
+.book_list > div > a {
+  display: block;
+  width: 80%;
+  height: 36px;
+  padding-left: 10px;
+  overflow: hidden;
+  line-height: 18px;
+  color: #613f23;
+  text-decoration: none;
+  outline: 0;
+}
+.book_list > div > a:hover {
+  cursor: pointer;
+  color: #ed6c00;
+}
+.book_list > div > ul {
+  display: flex;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 10px;
+}
+.book_list > div > ul > li {
+  padding: 0 1px;
+}
+.book_list > div:last-child {
+  color: #333;
+  font-family: Tahoma;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-align: center;
+}
+.book_list > div:last-child > em {
+  font-weight: bold;
+  font-style: normal;
+}
+.book_list > div:last-child > del {
+  color: #999;
+  margin-left: 6px;
+}
+/*end********************第一大栏目********************end*/
+
+/*start********************四个banner********************start*/
+#banner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+  height: 174px;
+  background: url(../img/line.png) center no-repeat;
+}
+#banner > div {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #e4ded8;
+}
+#banner > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 169px;
+}
+#banner > ul > li > img {
+  cursor: pointer;
+  width: 224px;
+  height: 120px;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px grey;
+}
+/*end********************四个banner********************end*/
+/*start********************特价图书********************start*/
+#lowprice {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+}
+#lowprice > div:first-child {
+  position: relative;
+  height: 38px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 4px 20px 0;
+  line-height: 38px;
+}
+#lowprice > div:first-child > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+}
+#lowprice > div:first-child > span {
+  padding: 0;
+  float: right;
+}
+#lowprice > ul {
+  display: grid;
+  grid-template-columns: repeat(9, 130px);
+  margin-left: 15px;
+}
+#lowprice > ul > li > div:last-child {
+  text-align: left;
+  padding-left: 10px;
+}
+/*end********************特价图书********************end*/
+/*start********************书评广场********************start*/
+#bookarea {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+#bookarea > div:first-child {
+  position: relative;
+  height: 38px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 4px 20px 0;
+  line-height: 38px;
+}
+#bookarea > div:first-child > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+}
+#bookarea > div:first-child > span {
+  padding: 0 20px;
+  float: left;
+  color: #ed6c00;
+}
+#bookarea > div:first-child > div {
+  float: right;
+}
+/* .swiper-container_bookarea {
+} */
+.bookarea-card {
+  display: grid;
+  grid-template-columns: 390px 400px 390px;
+  grid-template-rows: repeat(2, auto);
+  background-color: #fbfaf8;
+  padding-bottom: 40px;
+}
+.bookarea-card > li {
+  background-color: #fbfaf8;
+}
+.bookarea-card > li > div{
+  height: 170px;
+  padding: 20px 15px 0px 15px;
+  margin-top: 10px;
+  background-color: #f4f2ef;
+  color: #a6978a;
+  display: flex;
+}
+/* 3个为一组，选中中间的第二个，然后加左右margin */
+.bookarea-card > li:nth-child(3n+2) {
+  margin: 0 10px;
+}
+.bookarea-card-content > p:first-child {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 5px 0;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
+    color: #793f23;
+}
+.bookarea-card-content > p:first-child:hover,.bookarea-card-content > p:nth-child(2):hover{
+  color: #333;
+  cursor: pointer;
+}
+.bookarea-card-content > p:nth-child(2) {
+    margin: 5px 0 0;
+    color: #666;
+    overflow: hidden;
+    height: 60px;
+}
+.bookarea-card-content {
+  margin-left: 10px;
+}
+.bookarea-card-content > div > ul {
+  display: flex;
+  margin: 30px 0 20px;
+  align-items: center;
+}
+.bookarea-card-content > div > ul:first-child {
+  float: left;
+}
+.bookarea-card-content > div > ul:first-child > li {
+  padding: 0 1px;
+}
+.bookarea-card-content > div > ul:last-child {
+  float: right;
+}
+.bookarea-card-content > div > ul:last-child > li {
+  cursor: pointer;
+  padding: 0 5px;
+}
+/* 轮播框按钮自定义 */
+.swiperbtn {
+  display: flex;
+}
+.swiperbtn > div {
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #e0dad5;
+}
+.swiper-pagination_bookarea {
+  --swiper-theme-color: #765b48;
+}
+.swiper-pagination_bookarea > span {
+  margin: 0 5px 2px;
+  width: 6px!important;
+  height: 6px!important;
+}
+/* 轮播框按钮聚焦后取消外边框 */
+.swiper-pagination_bookarea > span:focus {
+  outline: none;
+}
+.swiper-button-next_bookarea:hover,.swiper-button-prev_bookarea:hover {
+  cursor: pointer;
+}
+.swiper-button-next_bookarea:focus,.swiper-button-prev_bookarea:focus{
+  outline: none;
+}
+/*end********************书评广场********************end*/
+/*start********************最新上架********************start*/
+#new {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+}
+#new > div:first-child {
+  position: relative;
+  height: 38px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 4px 20px 0;
+  line-height: 38px;
+}
+#new > div:first-child > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+}
+#new > div:first-child > span {
+  padding: 0;
+  float: right;
+}
+#new > ul {
+  display: grid;
+  grid-template-columns: repeat(9, 130px);
+  margin-left: 15px;
+}
+#new > ul > li > div:last-child {
+  text-align: left;
+  padding-left: 10px;
+}
+/*end********************最新上架********************end*/
+
+/*start********************出版社介绍********************start*/
+#publisher {
+  width: 1200px;
+  margin: 35px auto 0px;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+  background: #f4f2ef;
+  height: 350px; /*删除*/
+}
+#publisher > div:first-child {
+  height: 50px;
+  padding: 12px 0 8px;
+  margin-bottom: 34px;
+  text-align: center;
+  border-bottom: 1px solid #dbd4cd;
+  position: relative;
+}
+#publisher > div:first-child > ul {
+  display: flex;
+}
+#publisher > div:first-child > ul > li > img {
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 0 15px;
+}
+#publisher > div:first-child > ul > li[class="sep"] {
+  line-height: 50px;
+}
+#publisher > div:first-child > ul > li:last-child {
+  line-height: 50px;
+  margin-left: 40px;
+}
+#pub_arr {
+  position: absolute;
+  top: 61px;
+  left: 85px; /*85 298 493 714 911*/
+}
+.publisher_content {
+  float: left;
+  width: 220px;
+  padding: 0 21px 0 35px;
+  color: #999;
+  line-height: 20px;
+}
+
+.publisher_content > h3 {
+  color: #333;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.publisher_content > p {
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.publisher_content > span {
+  padding: 0;
+}
+
+.pb_con > div:last-child > ul {
+  display: grid;
+  grid-template-columns: repeat(7, 130px);
+}
+.cover2 {
+  background: url(../img/cover.png) no-repeat;
+  padding: 4px 10px 16px;
+  margin-bottom: -4px;
+  background-position: 0 -148px;
+}
+.cover2,
+.cover2 > img {
+  cursor: pointer;
+  display: block;
+  width: 96px;
+  height: 128px;
+}
+/*end********************出版社介绍********************end*/

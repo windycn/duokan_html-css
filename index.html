@@ -1,0 +1,3021 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多看阅读(duokan.com) - 海量畅销电子书免费试读，数百万读者阅读首选</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="./css/public.css">
+    <link type="text/css" rel="stylesheet" href="./css/header.css">
+    <link type="text/css" rel="stylesheet" href="./css/nav.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <link type="text/css" rel="stylesheet" href="./css/footer.css">
+    <!-- Font Awesome图标库样式 -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <!-- Jquery引入 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- swiper6模块 -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"> </script>
+</head>
+
+<body>
+    <!-- 头部导航栏、图标、搜索 -->
+    <header>
+        <!-- 顶部导航栏 -->
+        <div id="topNav">
+            <div>
+                <ul>
+                    <li style="padding-left: 0;">小米网</li><span>|</span>
+                    <li>MIUI</li><span>|</span>
+                    <li>米聊</li><span>|</span>
+                    <li>游戏</li><span>|</span>
+                    <li style="color: black;">多看阅读</li><span>|</span>
+                    <li>云服务</li><span>|</span>
+                    <li>小米网移动版</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li style="padding-right: 0;">登录&nbsp;</li>/<li style="padding-left: 0;">&nbsp;注册</li><span>|</span>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;购物车&nbsp;0</li><span>|</span>
+                    <li id="focus" class="focus_plus_dropdown">
+                        <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;关注&nbsp;
+                        <i id="focus_up" class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i id="focus_down" class="fa fa-caret-down" aria-hidden="true"></i>
+                        <div class="focus_hidden">
+                            <div class="focus_dropdown_card">
+                                <div>
+                                    <img src="./img/duokan-weixin.png">
+                                    <figcaption>官方微信</figcaption>
+                                </div>
+                                <div>
+                                    <img src="./img/duokan-weibo.png">
+                                    <figcaption>官方微博</figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </li><span>|</span>
+                    <li id="fast_nav" class="fast_nav_dropdown" style="margin-right: 20px;">快速导航&nbsp;
+                        <i id="fast_nav_up" class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i id="fast_nav_down" class="fa fa-caret-down" aria-hidden="true"></i>
+                        <div class="fast_nav_hidden">
+                            <div class="fast_nav_dropdown_card">
+                                <div>兑换码换书</div>
+                                <div>最新上架</div>
+                            </div>
+                        </div>
+                    </li>
+                    <script>
+                        // 为了实现上下箭头的切换
+                        $(document).ready(function () {
+                            $("#focus_up").hide();
+                            $("#fast_nav_up").hide();
+                            $("#focus").hover(function () {
+                                $("#focus_down").hide();
+                                $("#focus_up").show();
+                            }, function () {
+                                $("#focus_down").show();
+                                $("#focus_up").hide();
+                            })
+                            $("#fast_nav").hover(function () {
+                                $("#fast_nav_down").hide();
+                                $("#fast_nav_up").show();
+                            }, function () {
+                                $("#fast_nav_down").show();
+                                $("#fast_nav_up").hide();
+                            })
+                        });
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <!-- LOGO及搜索框 -->
+        <div class="logo_search">
+            <div id="logo">
+                <img src="./img/logo.png" height="50px;">
+            </div>
+            <div id="search">
+                <span class="input_placeholder">搜索书名或作者...</span>
+                <input type="text">
+                <span class="ss">
+                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- 顶部次导航栏、重磅推荐、轮播框、活动快讯等 -->
+    <nav>
+        <div class="m-nav">
+            <ul>
+                <li>首页</li>
+                <li>榜单</li>
+                <li>书评</li>
+                <li>精品·免费</li>
+                <li>分类</li>
+                <li>客户端</li>
+                <li>论坛</li>
+            </ul>
+        </div>
+        <div class="m-common">
+            <!-- 左边分类栏目 -->
+            <div class="left">
+                <div class="m-directory">
+                    <h5>图书分类</h5>
+                    <ul>
+                        <li>
+                            <span>小说</span>
+                            <span>10069</span>
+                        </li>
+                        <li>
+                            <span>经管</span>
+                            <span>5989</span>
+                        </li>
+                        <li>
+                            <span>成功励志</span>
+                            <span>3071</span>
+                        </li>
+                        <li>
+                            <span>人文社科</span>
+                            <span>4249</span>
+                        </li>
+                        <li>
+                            <span>文学</span>
+                            <span>5600</span>
+                        </li>
+                        <li>
+                            <span>计算机</span>
+                            <span>3270</span>
+                        </li>
+                        <li>
+                            <span>历史</span>
+                            <span>2375</span>
+                        </li>
+                        <li>
+                            <span>生活</span>
+                            <span>1922</span>
+                        </li>
+                        <li>
+                            <span>动漫绘本</span>
+                            <span>473</span>
+                        </li>
+                        <li>
+                            <span>传记</span>
+                            <span>1244</span>
+                        </li>
+                        <li>
+                            <span>杂志</span>
+                            <span>1081</span>
+                        </li>
+                        <li>
+                            <span>原创文学</span>
+                            <span>292</span>
+                        </li>
+                        <li>
+                            <span>两性情感</span>
+                            <span>135</span>
+                        </li>
+                        <li>
+                            <span>自然科学</span>
+                            <span>906</span>
+                        </li>
+                        <li>
+                            <span>少儿</span>
+                            <span>1994</span>
+                        </li>
+                        <li>
+                            <span>旅游</span>
+                            <span>304</span>
+                        </li>
+                        <li>
+                            <span>政治军事</span>
+                            <span>604</span>
+                        </li>
+                        <li>
+                            <span>艺术</span>
+                            <span>1151</span>
+                        </li>
+                        <li>
+                            <span>法律</span>
+                            <span>95</span>
+                        </li>
+                        <li>
+                            <span>教育</span>
+                            <span>850</span>
+                        </li>
+                        <li>
+                            <span>外语</span>
+                            <span>873</span>
+                        </li>
+                        <li>
+                            <span>进口原版</span>
+                            <span>22</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中间轮播框和推荐 -->
+            <div class="center">
+                <div>
+                    <!-- 主轮播框-->
+                    <div class="swiper-main" style="cursor: pointer;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/lunbo1.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/lunbo2.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/lunbo3.jpg"></div>
+                            <div class="swiper-slide"><img src="./img/lunbo4.jpg"></div>
+                        </div>
+                        <!-- 主轮播框-分页器 -->
+                        <div class="main-page">
+                            <div class="swiper-pagination main-page pagination"></div>
+                        </div>
+                        <!-- 主轮播框左右箭头  -->
+                        <div class="hiddenarrow">
+                            <div class="swiper-button-next arrow-right"></div>
+                            <div class="swiper-button-prev arrow-left"></div>
+                        </div>
+                    </div>
+                    <!-- 初始化主轮播框- -->
+                    <script>
+                        var swiper = new Swiper('.swiper-main', {
+                            spaceBetween: 30,
+                            centeredSlides: true,
+                            loop: true,
+                            effect: 'fade',// 淡入淡出效果
+                            autoplay: {
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: '.pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.arrow-right',
+                                prevEl: '.arrow-left',
+                            },
+                        });
+                    </script>
+                </div>
+                <div>
+                    <p>重磅推荐</p>
+                    <div id="book-common">
+                        <ul>
+                            <li>
+                                <div class="book">
+                                    <a class="cover">
+                                        <img alt="《雪中悍刀行》完结版大全集（全20册"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01JdUOrzSuM/BF4FRB481S6dix.jpg!l">
+                                    </a>
+                                    <div>
+                                        <em>¥ 49.99 </em>
+                                        <del>¥ 248.00</del>
+                                    </div>
+                                </div>
+                                <div class="book_info">
+                                    <div>
+                                        <a>《雪中悍刀行》完结版大全集（全20册）</a>
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                            <li>&nbsp;( 1487 )</li>
+                                        </ul>
+                                    </div>
+                                    <span>烽火戏诸侯</span>
+                                    <p>烽火戏诸侯经典代表作，写尽了人们对江湖的全部想象。</p>
+                                    <a>立即阅读</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="book">
+                                    <a class="cover">
+                                        <img alt="明朝那些事儿（增补版 共九册）"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01lM8DOomUQ/eJvIhfGzG66Uqw.jpg!l">
+                                    </a>
+                                    <div>
+                                        <em>¥ 52.99 </em>
+                                        <del>¥ 108.00</del>
+                                    </div>
+                                </div>
+                                <div class="book_info">
+                                    <div>
+                                        <a>明朝那些事儿（增补版 共九册）</a>
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                            <li>&nbsp;( 282 )</li>
+                                        </ul>
+                                    </div>
+                                    <span>当年明月</span>
+                                    <p>当年明月全新修订，白话图文演绎明朝三百年兴衰风云！</p>
+                                    <a>立即阅读</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <span>活动快讯</span>
+                    <span>超级畅销的好书特价啦，戳此看看～</span>
+                </div>
+            </div>
+            <!-- 右边信息 -->
+            <div class="right">
+                <div>
+                    <h5>Hi 欢迎使用多看阅读</h5>
+                    <p>跨平台/多设备同步阅读进度、笔记和图书，轻松实现云阅读。</p>
+                    <div>
+                        <span>免费畅读</span>
+                        <span>登录</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>经典必读</h3>
+                    <p>
+                        乱世之中，一个小人物的辛酸命运；
+                        从动物到上帝，一本书读懂人类的前世今生；
+                        一部非虚构性的文本，展现这个时代我们的“皮囊”；
+                        一部打开中国人视野的经典之作！
+                    </p>
+                    <!-- 经典必读轮播框 -->
+                    <div class="swiper-books">
+                        <!-- swiper-no-swiping禁止鼠标手动切换 -->
+                        <div class="swiper-wrapper swiper-no-swiping">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01LqEubbLBh/yCOv5yEeR25Djv.jpg!t"
+                                        width="100px">
+                                </div>
+                                <span class="title">活着（余华作品）</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01fMESqc9xo/NL5SYA3iXZKkA0.jpg!t"
+                                        width="100px">
+                                </div>
+                                <span class="title">人类简史：从动物到上帝</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01dQBPf4J3w/h3IKI2QMSrPIce.jpg!t"
+                                        width="100px">
+                                </div>
+                                <span class="title">皮囊</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01PfLddxWgw/al9djfPRX45G4Z.jpg!t"
+                                        width="100px">
+                                </div>
+                                <span class="title">万历十五年（经典版）</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 自定义样式分页器 -->
+                    <div class="books-pagination">
+                        <div class="swiper-pagination1 books-pagination"></div>
+                    </div>
+                    <!-- 初始化经典必读轮播框 -->
+                    <script>
+                        var swiper1 = new Swiper('.swiper-books', {
+                            spaceBetween: 30, // 设置轮播之间的间距
+                            autoplay: true, // 自动播放
+                            effect: 'fade',// 淡入淡出效果
+                            pagination: {
+                                el: '.swiper-pagination1',
+                                clickable: true,
+                            },
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 排行榜、特价图书、书评广场、最新上架、出版社介绍 -->
+    <main>
+        <!-- 第一大栏目 -->
+        <div id="changxiao">
+            <div class="left">
+                <div>
+                    <ul>
+                        <li id="changxiaobtn" class="itm hot">畅销榜</li>
+                        <li class="sep">|</li>
+                        <li id="yuedubtn" class="itm">月度榜</li>
+                        <li class="sep">|</li>
+                        <li id="haopingbtn" class="itm">好评榜</li>
+                    </ul>
+                    <div id="arrow">
+                        <!-- 两个箭头叠加出线条 -->
+                        <span class="arrow0"></span>
+                        <span class="arrow1"></span>
+                    </div>
+                </div>
+                <div id="changxiaobang" style="display: block;">
+                    <ul class="u-txtlst">
+                        <li style="height: 100px;">
+                            <div class="info" style="display: flex; align-items: center;">
+                                <em class="hot">1.</em>
+                                <img style="padding: 20px 10px 10px 15px"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p019DkeLubMM/73KxX8N8FPCv5O.jpg!vt">
+                                <span class="u-title">
+                                    遗失在西方的中国史：法国彩色画报记录的中国：1850—1937（全二册）
+                                    <p class="u-author" style="padding-left: 0px;">
+                                        <span>赵省伟</span> <span>李小玉</span>
+                                    </p>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">2.</em>商务英语10000单词</span>
+                            <p class="u-author">
+                                <span>【澳】格拉哈姆·帕特森</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">3.</em>名侦探的救赎（顾溪亭悬疑推理短篇集）</span>
+                            <p class="u-author">
+                                <span>顾溪亭</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">4.</em>名画之谜系列（共三册）</span>
+                            <p class="u-author">
+                                <span>【日】中野京子</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">5.</em>基督山伯爵（全二册）</span>
+                            <p class="u-author">
+                                <span>【法】亚历山大·仲马</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">6.</em>黄金时代</span>
+                            <p class="u-author">
+                                <span>王小波</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">7.</em>如何培养孩子的学习力</span>
+                            <p class="u-author">
+                                <span>张小雪</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">8.</em>美冠纯美阅读书系·中国卷（共18册）</span>
+                            <p class="u-author">
+                                <span>曹文轩 等</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">9.</em>腹有诗书气自华：唐五代两宋词简史</span>
+                            <p class="u-author">
+                                <span>郑振铎</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em style="margin-right: 5px!important;">10.</em>人性的弱点（无删改全译本）</span>
+                            <p class="u-author">
+                                <span>【美】卡耐基</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <span class="u-more">更多畅销榜<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div id="yuedubang" style="display: none;">
+                    <ul class="u-txtlst">
+                        <li style="height: 100px;">
+                            <div class="info" style="display: flex; align-items: center;">
+                                <em class="hot">1.</em>
+                                <img style="padding: 20px 10px 10px 15px"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01YkQg1YLWw/SRjJ7VF1sNk9Rr.jpg!vt">
+                                <span class="u-title">
+                                    人性的弱点（无删改全译本）
+                                    <p class="u-author" style="padding-left: 0px;">
+                                        <span>【美】卡耐基</span>
+                                    </p>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">2.</em>幸存者</span>
+                            <p class="u-author">
+                                <span>秦明</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">3.</em>十宗罪 4</span>
+                            <p class="u-author">
+                                <span>蜘蛛</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">4.</em>黄金时代</span>
+                            <p class="u-author">
+                                <span>王小波</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">5.</em>遗失在西方的中国史：法国彩色画报记录的中国：1850—1937（全二册）</span>
+                            <p class="u-author">
+                                <span>赵省伟</span> <span>李小玉</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">6.</em>环球科学（2020年11月）</span>
+                            <p class="u-author">
+                                <span>《环球科学》编辑部</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">7.</em>商务英语10000单词</span>
+                            <p class="u-author">
+                                <span>【澳】格拉哈姆·帕特森</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">8.</em>明朝那些事儿（全七册）</span>
+                            <p class="u-author">
+                                <span>当年明月</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">9.</em>亮剑</span>
+                            <p class="u-author">
+                                <span>都梁</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em style="margin-right: 5px!important;">10.</em>三体全集（读客经典文库
+                                全三册）</span>
+                            <p class="u-author">
+                                <span>刘慈欣</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <span class="u-more">更多月度榜<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div id="haopingbang" style="display: none;">
+                    <ul class="u-txtlst">
+                        <li style="height: 100px;">
+                            <div class="info" style="display: flex; align-items: center;">
+                                <em class="hot">1.</em>
+                                <img style="padding: 20px 10px 10px 15px"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01dopoR7mMf/IPUepGqiC5TnPh.jpg!vt">
+                                <span class="u-title">
+                                    北欧悬疑小说天王：尤·奈斯博作品集（全12册）
+                                    <p class="u-author" style="padding-left: 0px;">
+                                        <span>【挪威】尤·奈斯博</span>
+                                    </p>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">2.</em>赡养人类（刘慈欣作品）</span>
+                            <p class="u-author">
+                                <span>刘慈欣</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="hot">3.</em>JavaScript权威指南（第6版）</span>
+                            <p class="u-author">
+                                <span>【美】David Flanagan</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">4.</em>一路芳菲</span>
+                            <p class="u-author">
+                                <span>风浅</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">5.</em>项塔兰（全三册）</span>
+                            <p class="u-author">
+                                <span>【澳大利亚】格里高利·大卫·罗伯兹</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">6.</em>人性的弱点（青少年励志经典文库）</span>
+                            <p class="u-author">
+                                <span>【美】戴尔·卡耐基</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">7.</em>人类和疾病的抗争（套装共5册）</span>
+                            <p class="u-author">
+                                <span>【美】马特·里克特 等</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">8.</em>人类群星闪耀时（读客经典文库）</span>
+                            <p class="u-author">
+                                <span>【奥地利】斯蒂芬·茨威格</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em class="">9.</em>从零开始做餐饮（共二册）</span>
+                            <p class="u-author">
+                                <span>宋宣</span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <span class="u-title"><em style="margin-right: 5px!important;">10.</em>侣行</span>
+                            <p class="u-author">
+                                <span>张昕宇</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <span class="u-more">更多好评榜<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        // 选中畅销榜按钮
+                        $("#changxiaobtn").click(function () {
+                            // 设置选中样式
+                            $('#changxiaobtn').addClass("hot");
+                            $('#yuedubtn').removeClass("hot");
+                            $('#haopingbtn').removeClass("hot");
+                            // 移动箭头
+                            $('#arrow').animate({ 'left': '40px' });
+                            // 设置显示隐藏选项卡
+                            $('#yuedubang').css({ 'display': 'none' });
+                            $('#changxiaobang').css({ 'display': 'block' });
+                            $('#haopingbang').css({ 'display': 'none' });
+                        });
+                        // 选中月度榜按钮
+                        $("#yuedubtn").click(function () {
+                            // 设置选中样式
+                            $('#changxiaobtn').removeClass("hot");
+                            $('#yuedubtn').addClass("hot");
+                            $('#haopingbtn').removeClass("hot");
+                            // 移动箭头
+                            $('#arrow').animate({ 'left': '115px' });
+                            // 设置显示隐藏选项卡
+                            $('#yuedubang').css({ 'display': 'block' });
+                            $('#changxiaobang').css({ 'display': 'none' });
+                            $('#haopingbang').css({ 'display': 'none' });
+                        });
+                        // 选中好评榜按钮
+                        $("#haopingbtn").click(function () {
+                            // 设置选中样式
+                            $('#changxiaobtn').removeClass("hot");
+                            $('#yuedubtn').removeClass("hot");
+                            $('#haopingbtn').addClass("hot");
+                            // 移动箭头
+                            $('#arrow').animate({ 'left': '185px' });
+                            // 设置显示隐藏选项卡
+                            $('#yuedubang').css({ 'display': 'none' });
+                            $('#changxiaobang').css({ 'display': 'none' });
+                            $('#haopingbang').css({ 'display': 'block' });
+                        });
+                    });
+                </script>
+            </div>
+            <div class="right">
+                <div>
+                    <h5>精品推荐</h5>
+                    <span class="u-more">查看更多<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover">
+                                <img alt="雪球投资经典系列（套装共7册）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0VQHJr0z/UNNMesgrl62Ptg.jpg!l">
+                            </a>
+                            <div>
+                                <a>雪球投资经典系列（套装共7册）</a>
+                                <ul>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    <li>&nbsp;(0)</li>
+                                </ul>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 100px;">
+                                <span>银行螺丝钉</span>
+                                <span>方三文</span>
+                                <span>张居营 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 49.99 </em>
+                                <del>¥ 248.00</del>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 四个banner1 -->
+        <div id="banner">
+            <div></div>
+            <ul>
+                <li><img src="./img/banner-1.jpg"></li>
+                <li><img src="./img/banner-2.jpg"></li>
+                <li><img src="./img/banner-3.jpg"></li>
+                <li><img src="./img/banner-4.jpg"></li>
+            </ul>
+            <div></div>
+        </div>
+        <!-- 特价图书 -->
+        <div id="lowprice">
+            <div>
+                <h5>特价图书</h5>
+                <span class="u-more">查看更多<span class="arr">&gt;&gt;</span></span>
+            </div>
+            <ul>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="经济学思维课"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01mW0ycdaM7/Fn0MB9rrm4F9PU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>经济学思维课</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>王力哲</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="高自尊养育"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01oOrxVORiQ/w3VpXJyu5cFSV2.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>高自尊养育</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【英】梁贺岚</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="爆梗：救救脑子吧"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p017HMZaQdm4/ywzdHNmY4L0R27.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>爆梗：救救脑子吧</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>超好看故事</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="亲密关系：重新发现自我"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ATMMJPru3/tRQinYSg9InrEU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>亲密关系：重新发现自我</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【加】克里斯多福·孟</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99</em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="物哀"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01iOzngtBJg/v2fY11NG5CIArp.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>物哀</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【日】本居宣长 等</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 23.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="做一个内心明亮的人"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Pr69ati3N/gl0tjU9P9rHCa8.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>做一个内心明亮的人</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>乌云装扮者</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="新世纪诗典·第八季"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01BRhyZ38Qb/mf3qzLcocUq6Kh.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>新世纪诗典·第八季</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>伊沙</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 26.00</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="意志力陷阱"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016nhFZWkoT/x6ri4nssd0RbHr.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>意志力陷阱</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【美】本杰明·哈迪</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="可是我偏偏不喜欢"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01uvv7iYuXl/vURsV2OeiXBe8m.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>可是我偏偏不喜欢</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>吴晓乐</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 书评广场 -->
+        <div id="bookarea">
+            <div>
+                <h5>书评广场</h5>
+                <span class="u-more">更多<span class="arr">&gt;&gt;</span></span>
+                <!-- 轮播框切换按钮 -->
+                <div class="swiperbtn">
+                    <div class="swiper-button-prev_bookarea">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-pagination_bookarea"></div>
+                    <div class="swiper-button-next_bookarea">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container_bookarea">
+                <div class="swiper-wrapper swiper-no-swiping">
+                    <div class="swiper-slide">
+                        <ul class="bookarea-card">
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="bookarea-card">
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="bookarea-card">
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="bookarea-card">
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="bookarea-card">
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid-hidden">
+                                <div>
+                                    <a class="cover2">
+                                        <img alt="两京十五日"
+                                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SPYvO1JoV/JpZEbDLRVqlRGz.jpg!ss">
+                                    </a>
+                                    <div class="bookarea-card-content">
+                                        <p>两京十五日</p>
+                                        <p>结局烂尾，人物塑造完全不合常理，朱瞻基明明是无辜的，却要为爷爷父亲背锅，明明一路上理解了人间疾苦，反对殉葬，却最终没做任何改变。主角的颓废和超强应变能力都不合理，女主的仇和剧情没半毛钱关系，留在最后是硬伤。一帮人一到关键时刻就开挂，回回绝处逢生，弄的我看到后边危急时刻都不怎么紧张了。大体上给3分，前半段节奏很好，扣人心弦，后半段感觉故事明显兑水，虎头蛇尾。无论是故事、节奏还是人物塑造都远不如长安24小时。更别说堂堂马亲王现在不讲武德，写小说竟然不造梗！让我这多年老粉心里凉凉。在这里奉劝马亲王耗子尾汁。
+                                        </p>
+                                        <div>
+                                            <ul>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;0
+                                                </li>
+                                                <li>|</li>
+                                                <li>
+                                                    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container_bookarea', {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    speed: 1500, // 动画播放速度
+                    loop: true,
+                    loopAdditionalSlides : 1, //形成无缝循环，前后各加头尾一个
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination_bookarea',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next_bookarea',
+                        prevEl: '.swiper-button-prev_bookarea',
+                    },
+                });
+            </script>
+        </div>
+        <!-- 四个banner2 -->
+        <div id="banner">
+            <div></div>
+            <ul>
+                <li><img src="./img/banner-5.jpg"></li>
+                <li><img src="./img/banner-6.jpg"></li>
+                <li><img src="./img/banner-7.jpg"></li>
+                <li><img src="./img/banner-8.jpg"></li>
+            </ul>
+            <div></div>
+        </div>
+        <!-- 最新上架 -->
+        <div id="new">
+            <div>
+                <h5>最新上架</h5>
+                <span class="u-more">查看更多<span class="arr">&gt;&gt;</span></span>
+            </div>
+            <ul>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="经济学思维课"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01mW0ycdaM7/Fn0MB9rrm4F9PU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>经济学思维课</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>王力哲</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="高自尊养育"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01oOrxVORiQ/w3VpXJyu5cFSV2.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>高自尊养育</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【英】梁贺岚</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="爆梗：救救脑子吧"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p017HMZaQdm4/ywzdHNmY4L0R27.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>爆梗：救救脑子吧</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>超好看故事</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="亲密关系：重新发现自我"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ATMMJPru3/tRQinYSg9InrEU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>亲密关系：重新发现自我</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【加】克里斯多福·孟</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99</em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="物哀"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01iOzngtBJg/v2fY11NG5CIArp.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>物哀</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【日】本居宣长 等</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 23.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="做一个内心明亮的人"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Pr69ati3N/gl0tjU9P9rHCa8.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>做一个内心明亮的人</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>乌云装扮者</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="新世纪诗典·第八季"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01BRhyZ38Qb/mf3qzLcocUq6Kh.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>新世纪诗典·第八季</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>伊沙</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 26.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="经济学思维课"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01mW0ycdaM7/Fn0MB9rrm4F9PU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>经济学思维课</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>王力哲</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="高自尊养育"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01oOrxVORiQ/w3VpXJyu5cFSV2.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>高自尊养育</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【英】梁贺岚</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="爆梗：救救脑子吧"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p017HMZaQdm4/ywzdHNmY4L0R27.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>爆梗：救救脑子吧</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>超好看故事</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="亲密关系：重新发现自我"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ATMMJPru3/tRQinYSg9InrEU.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>亲密关系：重新发现自我</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【加】克里斯多福·孟</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99</em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="物哀"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01iOzngtBJg/v2fY11NG5CIArp.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>物哀</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【日】本居宣长 等</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 23.92</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="做一个内心明亮的人"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Pr69ati3N/gl0tjU9P9rHCa8.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>做一个内心明亮的人</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>乌云装扮者</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 18.00</del>
+                    </div>
+                </li>
+                <li class="book_list">
+                    <a class="cover">
+                        <img alt="新世纪诗典·第八季"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01BRhyZ38Qb/mf3qzLcocUq6Kh.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>新世纪诗典·第八季</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>伊沙</span>
+                    </div>
+                    <div>
+                        <em>¥ 12.99 </em>
+                        <del>¥ 26.00</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="意志力陷阱"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016nhFZWkoT/x6ri4nssd0RbHr.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>意志力陷阱</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【美】本杰明·哈迪</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="可是我偏偏不喜欢"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01uvv7iYuXl/vURsV2OeiXBe8m.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>可是我偏偏不喜欢</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>吴晓乐</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="意志力陷阱"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016nhFZWkoT/x6ri4nssd0RbHr.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>意志力陷阱</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>【美】本杰明·哈迪</span>
+                    </div>
+                    <div>
+                        <em>¥ 11.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+                <li class="book_list grid-hidden">
+                    <a class="cover">
+                        <img alt="可是我偏偏不喜欢"
+                            src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01uvv7iYuXl/vURsV2OeiXBe8m.jpg!l">
+                    </a>
+                    <div style="width: 120px;height: 40px;">
+                        <a>可是我偏偏不喜欢</a>
+                    </div>
+                    <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                        <span>吴晓乐</span>
+                    </div>
+                    <div>
+                        <em>¥ 13.99 </em>
+                        <del>¥ 19.92</del>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 出版社介绍-->
+        <div id="publisher">
+            <div>
+                <ul>
+                    <li id="motiebtn"><img src="./img/motietushu.png"></li>
+                    <li class="sep">|</li>
+                    <li id="dukebtn"><img src="./img/duke.png"></li>
+                    <li class="sep">|</li>
+                    <li id="guomaibtn"><img src="./img/guomaiwenhua.png"></li>
+                    <li class="sep">|</li>
+                    <li id="bojibtn"><img src="./img/bojitianjuan.png"></li>
+                    <li class="sep">|</li>
+                    <li id="zhongxinbtn" class="grid-hidden"><img src="./img/zhongxin.png"></li>
+                    <li class="grid-hidden sep" style="line-height: 50px;">|</li>
+                    <li><span class="u-more" style="padding: 0 !important;">查看更多出版社<span
+                                class="arr">&gt;&gt;</span></span></li>
+                </ul>
+                <div id="pub_arr">
+                    <!-- 两个箭头叠加出线条 -->
+                    <span class="arrow0"></span>
+                    <span class="arrow1"></span>
+                </div>
+            </div>
+            <div id="motie" class="pb_con" style="display: block;">
+                <div class="publisher_content">
+                    <h3>北京磨铁数盟信息技术有限公司</h3>
+                    <p>磨铁是一家综合类出版策划、发行公司，为民营书业之翘楚，在中国出版业享有盛誉。磨铁图书的出版策划领域广泛，涉及社科、历史、文艺、青春、言情、动漫、经管、励志、生活、心灵、学习等各个领域。</p>
+                    <span class="u-more">查看更多图书<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="经济学思维课"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01mW0ycdaM7/Fn0MB9rrm4F9PU.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>经济学思维课</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>王力哲</span>
+                            </div>
+                            <div>
+                                <em>¥ 12.99 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="高自尊养育"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01oOrxVORiQ/w3VpXJyu5cFSV2.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>高自尊养育</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【英】梁贺岚</span>
+                            </div>
+                            <div>
+                                <em>¥ 13.99 </em>
+                                <del>¥ 19.92</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="爆梗：救救脑子吧"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p017HMZaQdm4/ywzdHNmY4L0R27.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>爆梗：救救脑子吧</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>超好看故事</span>
+                            </div>
+                            <div>
+                                <em>¥ 12.99 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="亲密关系：重新发现自我"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ATMMJPru3/tRQinYSg9InrEU.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>亲密关系：重新发现自我</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【加】克里斯多福·孟</span>
+                            </div>
+                            <div>
+                                <em>¥ 13.99</em>
+                                <del>¥ 19.92</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="物哀"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01iOzngtBJg/v2fY11NG5CIArp.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>物哀</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【日】本居宣长 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 11.99 </em>
+                                <del>¥ 23.92</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover2">
+                                <img alt="做一个内心明亮的人"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Pr69ati3N/gl0tjU9P9rHCa8.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>做一个内心明亮的人</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>乌云装扮者</span>
+                            </div>
+                            <div>
+                                <em>¥ 13.99 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover2">
+                                <img alt="意志力陷阱"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p016nhFZWkoT/x6ri4nssd0RbHr.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>意志力陷阱</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【美】本杰明·哈迪</span>
+                            </div>
+                            <div>
+                                <em>¥ 11.99 </em>
+                                <del>¥ 19.92</del>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="duke" class="pb_con" style="display: none;">
+                <div class="publisher_content">
+                    <h3>上海读客图书有限公司</h3>
+                    <p>读客图书是中国书业品牌影响力领先、营销模式领先、生产方式领先的专业出版机构。以“开拓图书购买人群，向平时不买书的读者要销量”为理念，为每一本图书打造全新购买理由和附加价值，强力拉动了图书的销售，为书业赢得了更多新读者。
+                    </p>
+                    <span class="u-more">查看更多图书<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="橡皮：中国先锋文学"
+                                    src="http://cover.read.duokan.com/mfsv2/download/s010/p01QdgqWR1Z0/EgFn64QviUMg16.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>橡皮：中国先锋文学</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>杨黎</span>
+                            </div>
+                            <div>
+                                <em>¥ 6.00 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="guomai" class="pb_con" style="display: none;">
+                <div class="publisher_content">
+                    <h3>杭州果麦文化传媒有限公司</h3>
+                    <p>杭州果麦文化传媒有限公司由出版人路金波先生及骨干员工于2012年8月发起设立。果麦公司致力于为城市新兴中产阶级打造优质的、多媒体形式的文化产品。主要方向有文学、历史、科学、宗教四大类。公司与作家韩寒、安妮宝贝、冯唐、严歌苓、安意如等，学者易中天、李继宏、赵闯、骆玉明等有密切合作。
+                    </p>
+                    <span class="u-more">查看更多图书<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="boji" class="pb_con" style="display: none;">
+                <div class="publisher_content">
+                    <h3>中南博集天卷文化传媒有限公司</h3>
+                    <p>中南博集天卷文化传媒有限公司为中南出版传媒集团股份有限公司与北京博集天卷图书发行有限公司共同组建的合资企业，成立于2011年3月，主要从事图书、期刊、报纸、电子出版物批发和零售业务。拥有社科文艺、外国文学、历史文化、佛学宗教、青春言情、时尚读物等优秀产品线。
+                    </p>
+                    <span class="u-more">查看更多图书<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="zhongxin" class="pb_con" style="display: none;">
+                <div class="publisher_content">
+                    <h3>中信联合云科技有限责任公司</h3>
+                    <p>中信出版集团股份有限公司成立于1988年，是全国唯一家企业化的出版机构。作为跨国集团旗下的综合性传媒机构，正在成长为中国最具活力的媒体先锋，是卓越的内容与服务提供商。为读者提供最前沿的思想与最优秀的学习实践，通过有价值的、有享受的阅读，倡导与展示新的文化主流，启动一个“大众阅读时代”。
+                    </p>
+                    <span class="u-more">查看更多图书<span class="arr">&gt;&gt;</span></span>
+                </div>
+                <div>
+                    <ul>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="创造者"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01XU1XZEAjC/EKiLN23vmPGqOa.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>创造者</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【美】沃尔特·艾萨克森</span>
+                            </div>
+                            <div>
+                                <em>¥ 25.99 </em>
+                                <del>¥ 30.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="寻找菲比：英汉对照版（短篇小说大师系列）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/s010/p01eE9wI80mf/8dGeXhCA739Akf.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>寻找菲比：英汉对照版（短篇小说大师系列）</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【美】西奥多·德莱塞</span>
+                            </div>
+                            <div>
+                                <em>¥ 18.00 </em>
+                                <del>¥ 25.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="爆梗：救救脑子吧"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p017HMZaQdm4/ywzdHNmY4L0R27.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>爆梗：救救脑子吧</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>超好看故事</span>
+                            </div>
+                            <div>
+                                <em>¥ 12.99 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="好人难寻：英汉对照版（短篇小说大师系列）"
+                                    src="http://cover.read.duokan.com/mfsv2/download/s010/p0167i6nDLXX/WyZ5gvCwAWdh0z.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>好人难寻：英汉对照版（短篇小说大师系列）</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【美】弗兰纳里·奥康纳</span>
+                            </div>
+                            <div>
+                                <em>¥ 18.00 </em>
+                                <del>¥ 25.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list">
+                            <a class="cover2">
+                                <img alt="物哀"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01iOzngtBJg/v2fY11NG5CIArp.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>物哀</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>【日】本居宣长 等</span>
+                            </div>
+                            <div>
+                                <em>¥ 11.99 </em>
+                                <del>¥ 23.92</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover2">
+                                <img alt="做一个内心明亮的人"
+                                    src="http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Pr69ati3N/gl0tjU9P9rHCa8.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>做一个内心明亮的人</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>乌云装扮者</span>
+                            </div>
+                            <div>
+                                <em>¥ 13.99 </em>
+                                <del>¥ 18.00</del>
+                            </div>
+                        </li>
+                        <li class="book_list grid-hidden">
+                            <a class="cover2">
+                                <img alt="微创新：5种微小改变创造伟大产品"
+                                    src="http://cover.read.duokan.com/mfsv2/download/s010/p014sCLBih3z/Da3qcTQINDyQ2a.jpg!l">
+                            </a>
+                            <div style="width: 120px;height: 40px;">
+                                <a>微创新：5种微小改变创造伟大产品</a>
+                            </div>
+                            <div class="u-author" style="color: #666; padding-left:10px; width: 80px;">
+                                <span>德鲁 博迪</span>
+                                <span>雅各布 戈登堡</span>
+                            </div>
+                            <div>
+                                <em>¥ 16.99 </em>
+                                <del>¥ 40.00</del>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    // 选中磨铁按钮
+                    $("#motiebtn").click(function () {
+                        // 移动箭头
+                        $('#pub_arr').animate({ 'left': '85px' });
+                        // 设置显示隐藏选项卡
+                        $('#motie').css({ 'display': 'block' });
+                        $('#duke').css({ 'display': 'none' });
+                        $('#guomai').css({ 'display': 'none' });
+                        $('#boji').css({ 'display': 'none' });
+                        $('#zhongxin').css({ 'display': 'none' });
+                    });
+                    // 选中读客按钮
+                    $("#dukebtn").click(function () {
+                        // 移动箭头
+                        $('#pub_arr').animate({ 'left': '298px' });
+                        // 设置显示隐藏选项卡
+                        $('#motie').css({ 'display': 'none' });
+                        $('#duke').css({ 'display': 'block' });
+                        $('#guomai').css({ 'display': 'none' });
+                        $('#boji').css({ 'display': 'none' });
+                        $('#zhongxin').css({ 'display': 'none' });
+                    });
+                    // 选中果麦按钮
+                    $("#guomaibtn").click(function () {
+                        // 移动箭头
+                        $('#pub_arr').animate({ 'left': '493px' });
+                        // 设置显示隐藏选项卡
+                        $('#motie').css({ 'display': 'none' });
+                        $('#duke').css({ 'display': 'none' });
+                        $('#guomai').css({ 'display': 'block' });
+                        $('#boji').css({ 'display': 'none' });
+                        $('#zhongxin').css({ 'display': 'none' });
+                    });
+                    // 选中博集天卷按钮
+                    $("#bojibtn").click(function () {
+                        // 移动箭头
+                        $('#pub_arr').animate({ 'left': '714px' });
+                        // 设置显示隐藏选项卡
+                        $('#motie').css({ 'display': 'none' });
+                        $('#duke').css({ 'display': 'none' });
+                        $('#guomai').css({ 'display': 'none' });
+                        $('#boji').css({ 'display': 'block' });
+                        $('#zhongxin').css({ 'display': 'none' });
+                    });
+                    // 选中中信按钮
+                    $("#zhongxinbtn").click(function () {
+                        // 移动箭头
+                        $('#pub_arr').animate({ 'left': '911px' });
+                        // 设置显示隐藏选项卡
+                        $('#motie').css({ 'display': 'none' });
+                        $('#duke').css({ 'display': 'none' });
+                        $('#guomai').css({ 'display': 'none' });
+                        $('#boji').css({ 'display': 'none' });
+                        $('#zhongxin').css({ 'display': 'block' });
+                    });
+                });
+            </script>
+        </div>
+        <!-- 四个banner3 -->
+        <div id="banner">
+            <div></div>
+            <ul>
+                <li><img src="./img/banner-9.jpg"></li>
+                <li><img src="./img/banner-10.jpg"></li>
+                <li><img src="./img/banner-11.jpg"></li>
+                <li><img src="./img/banner-12.jpg"></li>
+            </ul>
+            <div></div>
+        </div>
+    </main>
+    <!-- 底部信息栏、回到顶部按钮 -->
+    <footer class="foo">
+        <div>
+            <p style="margin: 5px 0">
+                <span>手机版</span>
+                <span class="u-sep">|</span>
+                <span>关于我们</span>
+                <span class="u-sep">|</span>
+                <span>联系我们</span>
+                <span class="u-sep">|</span>
+                <span>商务合作</span>
+                <span class="u-sep">|</span>
+                <span>隐私政策</span>
+                <span class="u-sep">|</span>
+                <span>服务协议</span>
+                <span class="u-sep">|</span>
+                <span>版权声明</span>
+                <span class="u-sep">|</span>
+                <span>侵权投诉</span>
+                <span class="u-sep">|</span>
+                <span>营业执照</span>
+            </p>
+            <p>Copyright&copy;duokan.com
+                <span>ICP许可证：京B2-20180590号</span>
+                <span>京ICP备10047083号</span>
+                <span>电复证字第01D010号</span>
+                <span><img src="./img/gongan.png" style="vertical-align: -4px;">京公网安备11010802022293号</span>
+                <span>京网文[2020]0487-082号</span>
+            </p>
+        </div>
+        <div>
+            <div>
+                <p style="line-height: 25px;font-weight: 600;">意见反馈</p>
+                <p style="line-height: 25px;" id="email">readerfeedback@duokan.com</p>
+            </div>
+            <ul>
+                <li><img src="./img/weibo-logo.png"></li>
+                <li class="weixin"><img src="./img/weixin-logo.png">
+                    <div class="weixin_card">
+                        <p>微信扫一下</p>
+                        <img src="./img/weixin-high.png">
+                    </div>
+                </li>
+                <li></li>
+            </ul>
+            <span id="goToTop">
+                <i class="fa fa-angle-up fa-2x" style="height: 20px;" aria-hidden="true"></i>
+                <span class="cnt">顶部</span>
+                <script>
+                    $(document).ready(function () {
+                        //进入网页时隐藏goToTop按钮
+                        $('#goToTop').hide();
+                        $(window).scroll(function () {
+                            //当window的scrolltop距离大于1时，显示或消失
+                            if ($(this).scrollTop() > 100) {
+                                $('#goToTop').fadeIn();
+                            } else {
+                                $('#goToTop').fadeOut();
+                            }
+                        });
+                        // 点击事件
+                        $('#goToTop').click(function () {
+                            // 这里用了动画，原网页没有动画，比较死板
+                            $('html ,body').animate({ scrollTop: 0 }, 300);
+                            return false;
+                        });
+                    })
+                </script>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

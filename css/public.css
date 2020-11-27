@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: arial,"Microsoft Yahei",sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #fbfaf8;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+
+header {
+    background-color: #fbfaf8;
+    height: 36px;
+    border-bottom: 1px solid #eae6e2;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+nav {
+    width: 100%;
+    background-color: #fbfaf8;
+}
+footer {
+    width:1200px;
+    padding: 30px 10px 30px;
+}
+/* 书籍阴影及加载失败背景公共样式 */
+.cover {
+    background: url(../img/cover.png) no-repeat;
+    padding: 4px 10px 16px;
+    margin-bottom: -4px;
+    background-position: 0 0;
+}
+.cover , .cover > img {
+    cursor: pointer;
+    display: block;
+    width: 96px;
+    height: 128px;
+}
+/* 评星的样式 */
+.fa-star,.fa-star-half-o{
+    color: #ff7437;
+}
+/* 媒体相应，在屏幕缩小到1200px最大宽度时，布局进行调整*/
+@media all and (max-width: 1200px) {
+    .m-nav,.m-common,footer,#topNav,.logo_search,#changxiao,#banner,#lowprice,#bookarea,#new,#publisher {
+        width: 960px !important;
+    }
+    /* 隐藏上边三栏目的右栏目 */
+    .m-common > div.right {
+        display: none !important;
+    }
+    .m-nav > ul {
+        padding-left: 260px;
+        margin: 0 !important;
+    }
+    /* 网格变化 */
+    #changxiao > div.right > div:last-child > ul {
+        grid-template-columns: repeat(5, 135px)!important;
+        grid-template-rows: repeat(2, 260px)!important;
+    }
+    #new> ul {
+        grid-template-columns: repeat(7, 130px)!important;
+    }
+    .pb_con > div:last-child > ul {
+        grid-template-columns: repeat(5, 130px)!important;
+    }
+    .bookarea-card {
+        grid-template-columns: 470px 480px!important;
+    }
+    /* 分组加左右margin */
+    .bookarea-card > li:nth-child(3n+2) {
+        margin: 0 !important;
+    }
+    .bookarea-card > li:nth-child(2n+1) {
+        margin: 0 10px !important;
+    }
+    /* 多余网格元素隐藏 */
+    .grid-hidden {
+        display: none;
+    }
+    /* 关于底部footer自适应的适配 */
+    .u-sep {
+        padding: 0 5px!important;
+    }
+    #goToTop {
+        position: fixed;
+        right: 10px!important;
+        bottom: 30px!important;
+    }
+    footer > div:first-child {
+        width: 65% !important;
+    }
+}
+@media all and (max-width: 1400px) {
+    #goToTop {
+        position: fixed;
+        right: 10px!important;
+        bottom: 30px!important;
+    }
+}

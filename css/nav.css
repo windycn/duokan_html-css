@@ -1,0 +1,353 @@
+/************************顶部************************/
+.m-nav {
+  height: 44px;
+  line-height: 44px;
+  background: #fa7a20;
+  border-radius: 3px;
+  width: 1200px;
+  margin: 0 auto;
+  font: 16px/44px "microsoft yahei", STXihei;
+  color: white;
+}
+.m-nav > ul {
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+}
+.m-nav > ul > li {
+  padding: 0 22px;
+}
+.m-nav > ul > li:hover {
+  cursor: pointer;
+  background-color: #f16300;
+}
+.m-nav > ul > li:first-child {
+  background-color: #f16300;
+}
+/************************左边************************/
+.m-common {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 0;
+  width: 1200px;
+  border-bottom: 2px solid #fa7a20;
+}
+.m-directory > h5 {
+  height: 35px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 35px;
+  color: #333;
+  background: #e7e2dd;
+}
+.m-directory > ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/* 默认选择深色底 */
+.m-directory > ul > li {
+  width: 80px;
+  height: 40px;
+  padding: 8px 20px 0;
+  color: #613f23;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e2dd;
+}
+.m-directory > ul > li > span:last-child {
+  cursor: pointer;
+  padding: 3px 0;
+  color: #afa298;
+}
+/* 隔行选中浅色第一个 */
+.m-directory > ul > li:nth-child(4n + 1) {
+  background-color: #f4f2ef;
+}
+/* 隔行选中浅色第二个 */
+.m-directory > ul > li:nth-child(4n + 2) {
+  background-color: #f4f2ef;
+}
+/* 选中所有的左块添加右边框 */
+.m-directory > ul > li:nth-child(2n + 1) {
+  border-right: 2px solid #dbd6d2;
+}
+/* 选中第一个子span添加hover属性 */
+.m-directory > ul > li > span:first-child:hover {
+  cursor: pointer;
+  color: #ed6c00;
+}
+/************************中间************************/
+.m-common > div.center {
+  display: flex;
+  flex-direction: column;
+}
+/* 主轮播框样式 */
+.m-common > div.center > div:first-child {
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+}
+.arrow-right, .arrow-left {
+    top: 100px !important;
+    padding: 20px 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    --swiper-navigation-size: 18px;
+    font-weight: 1000;
+    color: rgba(255, 255, 255, 0.699) !important;
+}
+.arrow-left {
+    left: 0px !important;
+}
+.arrow-right {
+    right: 0px !important;
+}
+.hiddenarrow {
+    display: none;
+}
+.swiper-main:hover .hiddenarrow {
+    display: block;
+}
+.main-page {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    line-height: 20px;
+    --swiper-pagination-color: #ed6c00;
+}
+.main-page > span {
+    margin: 0 4px;
+}
+.main-page > span:focus {
+  outline: none;
+}
+/******************************************/
+.m-common > div.center > div:last-child {
+  height: 20px;
+  margin-top: 10px;
+  padding: 6px 6px 6px 0;
+  background: #fdf6e2;
+  border: 1px solid #f9ddc9;
+  line-height: 20px;
+}
+.m-common > div.center > div:last-child > span:first-child {
+  float: left;
+  width: 94px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #ec6e00;
+  border-right: 1px solid #f5c3ae;
+  text-align: center;
+  font-weight: bold;
+}
+/* 对书籍栏进行操作 */
+.m-common > div.center > div:nth-child(2) > p {
+  font-size: 14px;
+  color: #ec6e00;
+  font-weight: bold;
+  padding: 4px 20px 0;
+  line-height: 38px;
+  height: 38px;
+  border-bottom: 1px solid #e0dad5;
+  margin-bottom: 28px;
+}
+#book-common > ul {
+    width: 700px;
+    display: flex;
+}
+#book-common > ul >li {
+    display: flex;
+    width: 50%;
+    padding: 8px 27px 16px 14px;
+    margin-right: 6px;
+    border-right: 1px solid #edeae6;
+}
+#book-common > ul >li:last-child {
+    border: none;
+}
+.book > div {
+    color: #333;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-align: center;
+}
+.book > div > em {
+    font-weight: bold;
+    font-style: normal;
+}
+.book > div > del {
+    color: #999;
+    margin-left: 6px;
+}
+.book_info{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.book_info > div > ul {
+    display: flex;
+    height: 25px;
+    line-height: 25px;
+}
+.book_info > div > ul > li{
+    padding: 0 1px;
+    color: #999999;
+}
+.book_info > div > a {
+    max-height: 36px;
+    margin: 3px 0 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.book_info > div > a:hover {
+    cursor: pointer;
+    color: #ef6c00;
+}
+.book_info > span {
+    padding: 3px 0;
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+}
+.book_info > a {
+    margin-top: 5px;
+    display: block;
+    line-height: 30px;
+    width: 60px;
+    color: #fff;
+    border: 1px solid #3d76de;
+    background: #4d87de;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%), 0 2px 2px rgb(77 153 22 / 10%);
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+.book_info > a:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+/************************右边************************/
+.m-common > div.right {
+  width: 240px;
+  display: block; /* 后期做媒体响应 */
+}
+.m-common > div.right > div:first-child {
+  height: 174px;
+  padding: 16px;
+  margin-bottom: 8px;
+  background: #f4f2ef;
+  color: #a6978a;
+}
+.m-common > div.right > div:first-child > h5 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.m-common > div.right > div:first-child > div {
+  padding: 22px 0 4px;
+  display: flex;
+  flex-direction: column;
+}
+.m-common > div.right > div:first-child > div > span:first-child {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dd4731;
+  background: #e45a3f;
+  text-shadow: rgb(0 0 0 / 30%) 0px 1px 2px;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%),
+    0 2px 2px rgb(228 90 63 / 20%);
+  background: -webkit-linear-gradient(top, #e45a3f, #df4833);
+  background: -moz-linear-gradient(top, #e45a3f, #df4833);
+  border-radius: 3px;
+  margin: 12px 0 0;
+  padding: 0 15px;
+  margin-top: 12px;
+}
+.m-common > div.right > div:first-child > div > span:last-child {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #c2b3a7;
+  background: #f8f7f4;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%),
+    0 2px 2px rgb(166 151 138 / 20%);
+  background: -webkit-linear-gradient(top, #f8f7f4, #f7f5f2);
+  background: -moz-linear-gradient(top, #f8f7f4, #f7f5f2);
+  border-radius: 3px;
+  margin: 12px 0 0;
+  padding: 0 15px;
+  margin-top: 12px;
+}
+.m-common > div.right > div:first-child > div > span:first-child:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.m-common > div.right > div:first-child > div > span:last-child:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.m-common > div.right > div:last-child {
+  padding-bottom: 5px;
+  background: #f4f2ef;
+  color: #a6978a;
+}
+
+.m-common > div.right > div:last-child > h3 {
+  padding: 16px 16px 0;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.m-common > div.right div:last-child > p {
+  padding: 0 16px;
+}
+.swiper-books {
+  width: 100%;
+  height: 180px;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-books > div:first-child > div {
+  text-align: center;
+  font-size: 14px;
+  background: #f4f2ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiper-books > div:first-child > div > span {
+  width: 130px;
+  margin: 10px auto 20px;
+  color: #333;
+}
+.swiper-books > div:first-child > div > span:hover {
+  cursor: pointer;
+  color: #ed6c00;
+}
+/* 修改分页器样式... */
+.books-pagination {
+  width: 60px;
+  margin: 0 auto;
+  --swiper-pagination-color: #765c47;
+  text-align: center;
+}
+.books-pagination >  span {
+  margin: 0 2px;
+  width: 6px;
+  height: 6px;
+}
+.books-pagination > span:focus {
+  outline: none;
+}

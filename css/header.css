@@ -1,0 +1,167 @@
+#topNav {
+    width:1200px;
+    height: 36px;
+    margin: 0 auto;
+    color: #8c8c8c;
+    border-bottom: 1px solid #eae6e2;
+}
+#topNav > div:first-child {
+    float: left;
+}
+#topNav > div:nth-child(2) {
+    float: right;
+    color: #333333;
+}
+
+#topNav > div > ul {
+    display: flex;
+}
+#topNav > div > ul > li {
+    line-height: 36px;
+    padding: 0 10px;
+    position: relative;
+}
+#topNav > div:nth-child(2) > ul > span{
+    padding: 0 10px;
+    position: relative;
+}
+li > i {
+    color: #aaaaaa;
+}
+/* :nth-child(-n+4)选择前3个li标签 */
+#topNav > div:nth-child(2) > ul > li:nth-child(-n+4):hover{
+    cursor: pointer;
+    color: #ed6c00;
+}
+#topNav > div:first-child > ul > li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/* 关注按钮的下拉菜单 */
+.focus_dropdown_card > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+.focus_plus_dropdown {
+    border: 1px solid #fbfaf8;
+}
+.focus_plus_dropdown:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #e8e4e0;
+    border-bottom: none;
+}
+.focus_hidden {
+    display: none;
+}
+.focus_plus_dropdown:hover .focus_hidden{
+    display: block;
+}
+.focus_dropdown_card {
+    border: 1px solid #e8e4e0;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    width: 150px;
+    top: 36px;
+    right: -101px;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    border-top: none;
+}
+/* 快速导航的下拉菜单 */
+.fast_nav_card > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+.fast_nav_dropdown {
+    border: 1px solid #fbfaf8;
+}
+.fast_nav_dropdown:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #e8e4e0;
+    border-bottom: none;
+}
+.fast_nav_hidden {
+    display: none;
+}
+.fast_nav_dropdown:hover .fast_nav_hidden{
+    display: block;
+}
+.fast_nav_dropdown_card {
+    border: 1px solid #e8e4e0;
+    background: #fff;
+    position: absolute;
+    width: 82px;
+    top: 36px;
+    right: -1px;
+    z-index: 100;
+    border-top: none;
+}
+.fast_nav_dropdown_card > div {
+    text-align: center;
+}
+.fast_nav_dropdown_card > div:hover {
+    background-color: #f5f5f5;
+    color:#ed6c00;
+}
+/* logo和search栏样式 */
+.logo_search {
+    height: 50px;
+    padding: 20px 0;
+    width:1200px;
+    margin: 0 auto;
+    font-family: arial,"Microsoft Yahei",sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #fbfaf8;
+}
+#logo {
+    float: left;
+}
+#search {
+    float: right;
+    width: 300px;
+    position: relative;
+}
+#search > input{
+    height: 34px;
+    margin: 5px 0;
+    padding-left: 12px;
+    background-color: #fff;
+    border: 2px solid #fa7a20;
+    border-radius: 5px;
+    width: 280px;
+    background: transparent;
+    z-index: 8;
+}
+.input_placeholder {
+    font-family: arial,"Microsoft Yahei",sans-serif;
+    font-size: 12px;
+    color: #a6978a;
+    position: absolute;
+    top: 6px;
+    left: 23px;
+    z-index: 5;
+}
+
+#search > input:focus {
+    outline: none;
+    border: 2px solid #fa7a20;
+    border-radius: 5px;
+}
+.ss {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: #fa7a20;
+}
+.ss:hover {
+    cursor: pointer;
+}
