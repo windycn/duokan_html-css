@@ -14,3 +14,13 @@
 2、利用VScode的Live Server插件运行HTTP服务打开（不支持局域网内访问）
 
 3、利用Node.js的npm工具下载Http Server工具，然后在网页目录运行服务
+
+---
+
+以下是我对该网页的具体分析，PPT含视频故Github上传[PDF]()版本，pptx版本见百度云盘链接：
+
+链接：https://pan.baidu.com/s/1h94VIkbGYHY6ur8ZcGCgdQ 
+提取码：8888 
+![百度网盘微信小程序二维码](https://i.loli.net/2020/11/30/GfUMu48wKEJn9L1.png)
+
+![image-20201127090555191](https://github.com/windycn/duokan_html-css/blob/main/img/PPT-img.png)
