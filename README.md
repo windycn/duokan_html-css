@@ -1,5 +1,5 @@
 # duokan_html-css
-多看网页精仿（带各种动效和自适应，含部分Javascript。），多看官网： www.duokan.com
+多看网页精仿（带各种动效和自适应，含部分Javascript），多看官网： www.duokan.com
 
 **注：由于用了较多类型的选择器，请初学者多了解选择器后再进行源码的阅读！**
 
