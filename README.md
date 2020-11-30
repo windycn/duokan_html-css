@@ -23,5 +23,5 @@
 提取码：8888 
 ![百度网盘微信小程序二维码](https://i.loli.net/2020/11/30/GfUMu48wKEJn9L1.png)
 
-
-![PPT摘要.jpeg](https://gitee.com/Windy_Yexiao/img-cache/raw/master/PPT摘要.jpeg)
+![PPT摘要.jpeg](https://github.com/windycn/duokan_html-css/blob/main/img/PPT-img.png)
+***Github图片如果加载不出来，请点击后下载图片！***
