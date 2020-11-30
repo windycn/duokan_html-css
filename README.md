@@ -17,7 +17,7 @@
 
 ---
 
-以下是我对该网页的具体分析，PPT含视频故Github上传[PDF]()版本，pptx版本见百度云盘链接：
+以下是我对该网页的具体分析，PPT含视频故Github上传[PDF](https://github.com/windycn/duokan_html-css/blob/main/多看页面分析.pdf)版本，pptx版本见百度云盘链接：
 
 链接：https://pan.baidu.com/s/1h94VIkbGYHY6ur8ZcGCgdQ 
 提取码：8888 
